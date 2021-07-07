@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <form method="POST" action="method.php">
+          <div  class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome"required tabindex="1">
+          </div>
+          <div class="form-group">
+            <label for="nome">E-mail</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="seu@email.com"required tabindex="2">
+          </div>
+          <div class="form-group">
+            <label for="data">Data de nascimento</label>
+            <input type="date" name="data" id="data" class="form-control" placeholder="Data de Nascimento"required tabindex="3" max="2017-01-01" min="1900-12-31">
+          </div>
+          <br>
+          <div class="form-group">
+            <label>Sexo</label>
+            <input type="radio" name="sexo" id="masculino" tabindex="0">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="feminino" tabindex="-1">
+            <label for="feminino">Feminino</label>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="li">Li o contrato</label>
+            <input type="checkbox" name="li" id="li" required>
+          </div>
+          <div class="form-group">
+            <label for="volume">Volume</label>
+            <input type="range" name="volume" id="volume" required>
+          </div>
+          <div class="form-group">
+            <label for="meter">Bateria</label>
+            <meter min="0" max="100"low="15" value="12">12</meter>
+          </div>
+          <div class="form-group">
+            <label for="progress">Carregando</label>
+            <progress min="0" max="100" value="60">60%</prog>
+          </div>
+          <div class="form-group">
+            <label for="ano">Ano Fabricacao</label>
+            <input type="number" name="ano" id="ano" min="1960" max="2021" value="2010" step="10" required>
+          </div>
+          <div class="form-group">
+            <label for="cor">Cor</label>
+            <input type="color" name="cor" id="cor">
+          </div>
+          <div class="form-group">
+            <label for="opiniao">Opiniao</label>
+            <textarea name="opiniao" id="opiniao" row=20 col=30></textarea>
+          </div>
+          <div class="form-group">
+            <label for="estado">Estados</label>
+            <select name="estado" id="estado">
+              <optgroup label="est1">
+                <option value="1">SP</option>
+                <option value="2">BH</option>
+                <option value="3">SC</option>
+                <option value="4">AC</option>
+              </optgroup>
+              <optgroup label="est2">
+                <option value="5">AM</option>
+                <option value="6">RJ</option>
+                <option value="7">MG</option>
+                <option value="8">RS</option>
+                <option value="9">ES</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="navegadores">Navegadores</label>
+            <input type="text" list="navegadores">
+            <datalist id="navegadores">
+              <option value="Chrome"></option>
+              <option value="Firefox"></option>
+              <option value="Safari"></option>
+              <option value="Edge"></option>
+            </datalist>
+          </div>
+          <br>
+          <div>
+            <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+          </div>
+        </form>
+          <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
