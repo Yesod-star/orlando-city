@@ -9,7 +9,7 @@ $app = new \Slim\Slim();
 
 // GET route
 $app->get(
-    '/index',
+    '',
     function () {
 
         require("view/index.php");
